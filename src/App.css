@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 100%); }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 16%) }
+
+/* .logo {
+    border-radius: 100%;
+} */
+
+.header {
+    padding: 18px;
+    transition: 0.25s ease;
+}
+.header.active {
+    background-color: hsl(0, 0%, 9%);
+    box-shadow: 0 12px 30px -10px hsla(0, 0%, 14%, 0.1);
+    padding: 12px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.span {
+    background-color: white;
+    transition: 0.25s ease;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.span.one {
+    transform: rotate(45deg) translate(3px, 2px);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.span.two {
+    transform: rotate(-45deg) ;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close:hover .span {
+    background: hsl(346, 100%, 58%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-list {
+    margin-block-end: 35px;
 }
 
-.card {
-  padding: 2em;
+.nav {
+    transition: .3s all linear;
 }
 
-.read-the-docs {
-  color: #888;
+.txt-add {
+    margin-block-end: 15px;
+}
+
+.navbar-text {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-block-end: 15px;
+}
+
+.contact-link {
+    color: hsl(346, 100%, 58%);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.contact-link:is(:hover, :focus-visible) {
+    text-decoration: underline;
 }

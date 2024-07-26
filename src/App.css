@@ -9,6 +9,32 @@
     border-radius: 100%;
 } */
 
+/*====================================
+#Re-used Styles 
+======================================*/
+.shape {
+    display: none;
+}
+.h1,.h2, .h3, .h4, .h5, .h6 {
+    font-family: "Recoleta", serif;
+    line-height: 1.2;
+}
+
+.h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+.h2, .h3, .h4, .h5, .h6 { font-weight: 300; }
+.h2 { font-size: 3rem; }
+.h3 { font-size: 2.5rem; }
+.h4 { font-size: 2rem; }
+.h5 { font-size: 1.5rem; }
+.h6 { font-size: 1rem; }
+
+
+/*--------------------------------------
+    #HEADER
+----------------------------------------*/
 .header {
     padding: 18px;
     transition: 0.25s ease;
@@ -61,4 +87,52 @@
 
 .contact-link:is(:hover, :focus-visible) {
     text-decoration: underline;
+}
+
+/*================================
+# HERO
+==================================*/
+.strong {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-text {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.logoImg {
+    background: url(assets/images/about-banner.jpg);
+    background-size: cover;
+    filter: brightness(1.5) contrast(1.5);
+}
+
+.text {
+    animation: rotateText 10s linear infinite;
+    cursor: pointer;
+}
+
+.text:is(:hover, :focus-visible) {
+    animation-play-state: paused;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.text p span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
 }

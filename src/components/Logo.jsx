@@ -1,3 +1,4 @@
+
 export const LogoBig = () => {
     return(
         <div className="logo-big cursor-pointer w-fit">
@@ -14,5 +15,4 @@ const Logo = () => {
     </div>
   )
 }
-
 export default Logo

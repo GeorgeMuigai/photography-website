@@ -8,7 +8,7 @@ const CircleLogo = () => {
     useEffect(() => {
         if (pElement.current) {
             pElement.current.innerHTML = pElement.current.innerText.split("").map(
-                (char, i) => `<span style="transform:rotate(${i * 8.8}deg">${char}</span>`
+                (char, i) => `<span style="transform:rotate(${i * 10}deg">${char}</span>`
             ).join("")
         }
     })

@@ -11,10 +11,17 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
+
+      <div className='font-recoleta flex items-center justify-center h-screen w-full text-center'>
+        <div>
+        <h6 className='font-semibold tracking-wide mb-3 text-base sm:text-2xl'>This Website is Under Construction until December 20th</h6>
+        <h1 className='font-bold text-lg tracking-widest sm:text-4xl '>We'll be back very soon</h1>
+        </div>
+      </div>
+      {/* <Hero />
       <Gallery />
       <Category />
-      <About />
+      <About /> */}
     </>
   )
 }
